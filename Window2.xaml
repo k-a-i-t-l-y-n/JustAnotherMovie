@@ -10,7 +10,7 @@
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="#FF526A85" Offset="1"/>
+                <GradientStop Color="#FF12EBB2" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="710,14,0,0" VerticalAlignment="Top" Width="75" Height="43" FontFamily="Monotype Corsiva" FontSize="14" Click="Button_Click"/>

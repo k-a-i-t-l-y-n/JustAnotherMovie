@@ -20,7 +20,8 @@ namespace PracticeProject
     /// </summary>
     public partial class Win2 : Window
     {
-        private object myString;
+        string text;
+        private string _text;
 
         //private string line;
 
@@ -31,7 +32,7 @@ namespace PracticeProject
         public Win2()
         {
             InitializeComponent();
-            this.myString = Value;
+            this.text = _text;
             
         }
 
