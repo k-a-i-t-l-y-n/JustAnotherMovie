@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace PracticeProject
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Window4.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window4 : Window
     {
-        public Window1()
+        public Window4()
         {
             InitializeComponent();
         }
@@ -29,15 +29,20 @@ namespace PracticeProject
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {    
-           var win2 = new Win2();
-           win2.Show();
-           this.Close();
+      
 
-       
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var window4 = new Win3();
+            window4.Show();
+            this.Close();
         }
 
-        
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+          //  CheckBox_Checked = "Like";
+
+
+        }
     }
 }

@@ -14,18 +14,18 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="710,14,0,0" VerticalAlignment="Top" Width="75" Height="43" FontFamily="Monotype Corsiva" FontSize="14" Click="Button_Click"/>
-        <Label Content="Title " HorizontalAlignment="Left" Margin="121,25,0,0" VerticalAlignment="Top" Width="73" Height="46" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="41" Margin="189,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="444" TextChanged="TextBox_TextChanged" FontFamily="Times New Roman" FontSize="18"/>
         <Label Content="Author" HorizontalAlignment="Left" Margin="122,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.198,-0.171" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="191,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="441" TextChanged="TextBox_TextChanged_1" FontFamily="Times New Roman" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="198,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" TextChanged="TextBox_TextChanged_1" FontFamily="Times New Roman" FontSize="18"/>
         <Label Content="Year" HorizontalAlignment="Left" Margin="125,174,0,0" VerticalAlignment="Top" Width="64" Height="37" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="44" Margin="189,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" TextChanged="TextBox_TextChanged_2" FontFamily="Times New Roman" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="44" Margin="195,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" TextChanged="TextBox_TextChanged_2" FontFamily="Times New Roman" FontSize="18"/>
         <Label Content="Genre" HorizontalAlignment="Left" Margin="119,249,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="54" Margin="192,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="449" TextChanged="TextBox_TextChanged_3" FontFamily="Times New Roman" FontSize="18"/>
         <Label Content="Director" HorizontalAlignment="Left" Margin="118,330,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="48" Margin="196,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" TextChanged="TextBox_TextChanged_4" FontFamily="Times New Roman" FontSize="18"/>
-        <Button Content="Next" HorizontalAlignment="Left" Margin="670,343,0,0" VerticalAlignment="Top" Width="89" Height="46" FontFamily="Monotype Corsiva" FontSize="16" Click="Button_Click_1"/>
+        <TextBox HorizontalAlignment="Left" Height="48" Margin="196,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" TextChanged="TextBox_TextChanged_4" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="681,358,0,0" VerticalAlignment="Top" Width="89" Height="46" FontFamily="Monotype Corsiva" FontSize="16" Click="Button_Click_1" RenderTransformOrigin="0.335,0.078"/>
         <Button Content="Previous" HorizontalAlignment="Left" Margin="5,3,0,0" VerticalAlignment="Top" Width="97" Height="49" FontFamily="Monotype Corsiva" FontSize="16" Click="Button_Click_2" RenderTransformOrigin="0.403,0.405"/>
+        <ComboBox HorizontalAlignment="Left" Margin="196,242,0,0" VerticalAlignment="Top" Width="232" Height="52"/>
+        <Button Content="GO" HorizontalAlignment="Left" Margin="679,304,0,0" VerticalAlignment="Top" Width="85" Height="42" Click="Button_Click_3" FontFamily="Monotype Corsiva" FontSize="16"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="484,106,0,0" VerticalAlignment="Top" Height="139" Width="293"/>
 
     </Grid>
 </Window>

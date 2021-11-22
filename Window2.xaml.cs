@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace PracticeProject
 {
     /// <summary>
@@ -22,13 +25,14 @@ namespace PracticeProject
     {
         string text;
         private string _text;
+        private object labelResults;
 
         //private string line;
 
         public int Index { get; private set; }
         public object Value { get; }
         public Action<object, TextChangedEventArgs> SetValueForText1 { get; private set; }
-
+       
         public Win2()
         {
             InitializeComponent();
@@ -43,43 +47,44 @@ namespace PracticeProject
             this.Close();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-            String Ttile = Console.ReadLine();
-            
-           
-        }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
-            String Author = Console.ReadLine();
+            string Author = Console.ReadLine();
         }
 
         private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
         {
-            String Year = Console.ReadLine();
+            string Year = Console.ReadLine();
+ 
         }
 
         private void TextBox_TextChanged_3(object sender, TextChangedEventArgs e)
         {
-            String Genre = Console.ReadLine();
+            string Genre = Console.ReadLine();
+
+
+            if (Genre.Length == 0)
+
+            {
+                Genre = "TEXT BOX is EMPTY";
+            }
+
+           
         }
 
         private void TextBox_TextChanged_4(object sender, TextChangedEventArgs e)
         {
-            String Director = Console.ReadLine();
+            string Director = Console.ReadLine();
 
         }
+         
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
-
-            
+           
             var win2= new Win3();
             win2.Show();
-            //this.myString = Value;
             this.Close(); 
             
         }
@@ -90,5 +95,18 @@ namespace PracticeProject
             win2. Show();
             this.Close();
         }
+
+       
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+         // Label. = TextBox_TextChanged_1._Text;
+          //Label. = TextBox_TextChanged_2._Text;
+          //Label. = TextBox_TextChanged_3._Text;
+          //Label. = TextBox_TextChanged_4._Text;
+
+        }
     }
 }
+
+

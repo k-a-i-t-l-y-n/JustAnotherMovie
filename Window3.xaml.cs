@@ -23,13 +23,13 @@ namespace PracticeProject
         private object printPreviewDialog1;
         private string sResult;
         private object richTextBox1;
-        private object myString;
+    //    private object myString;
         private object value;
 
         public Win3()
         {
             InitializeComponent();
-            
+
         }
 
         public int Index { get; private set; }
@@ -49,11 +49,17 @@ namespace PracticeProject
             this.Close();
         }
 
-      
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            //
-
+            var win3 = new Window4();
+            win3.Show();
+            this.Close();
         }
+
+      
+
+
     }
 }
+
+
