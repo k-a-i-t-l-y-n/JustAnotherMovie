@@ -18,9 +18,8 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Previous" HorizontalAlignment="Left" Margin="9,15,0,0" VerticalAlignment="Top" Width="75" Height="46" Click="Button_Click" FontFamily="Monotype Corsiva" FontSize="16" Grid.ColumnSpan="2"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="667,292,0,0" VerticalAlignment="Top" Width="75" Height="33" FontFamily="Monotype Corsiva" FontSize="16" Click="Button_Click_1" Grid.ColumnSpan="2" RenderTransformOrigin="0.456,-1.679"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="690,271,0,0" VerticalAlignment="Top" Width="75" Height="33" FontFamily="Monotype Corsiva" FontSize="16" Click="Button_Click_1" Grid.ColumnSpan="2" RenderTransformOrigin="0.456,-1.679"/>
         <Label Content="Results" HorizontalAlignment="Left" Margin="321,60,0,0" VerticalAlignment="Top" Width="143" FontFamily="Monotype Corsiva" FontSize="36" Grid.ColumnSpan="2"/>
-        <Button Grid.ColumnSpan="2" Content="Next" HorizontalAlignment="Left" Margin="665,16,0,0" VerticalAlignment="Top" Width="75" Height="35" FontFamily="Monotype Corsiva" FontSize="14" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

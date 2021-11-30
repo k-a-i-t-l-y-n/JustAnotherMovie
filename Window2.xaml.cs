@@ -1,7 +1,7 @@
 ﻿
-
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -23,90 +23,114 @@ namespace PracticeProject
     /// </summary>
     public partial class Win2 : Window
     {
-        string text;
-        private string _text;
-        private object labelResults;
 
-        //private string line;
 
-        public int Index { get; private set; }
+
+        public int Index { 
+                           get; 
+                           private set;
+                           }
         public object Value { get; }
         public Action<object, TextChangedEventArgs> SetValueForText1 { get; private set; }
-       
+
+
         public Win2()
         {
             InitializeComponent();
-            this.text = _text;
-            
+            LoadCombo();
+
+
         }
 
-      
+        
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e) //exit button
         {
             this.Close();
         }
 
 
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e) //textbox for Author
         {
-            string Author = Console.ReadLine();
+
+
         }
 
-        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
+        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e) //textbox for Year
         {
-            string Year = Console.ReadLine();
- 
+
+
         }
 
-        private void TextBox_TextChanged_3(object sender, TextChangedEventArgs e)
+        private void LoadCombo()
+
         {
-            string Genre = Console.ReadLine();
+            Combo.ItemsSource = new List<string> { "Action", "Drama","Horror", "Christmas", "Thriller","Comedy","Science Fiction","Romance"," Western","Adventure", "Fiction",
+                                                       "Muscical","Crime film","Fantasy","War","Television","Epic","Historical Fiction", "Gangster","Documentary","Noir","Children's Film",
+                                                       "Sports","Maritial Arts"
+                                                     };
+        }
 
-
-            if (Genre.Length == 0)
-
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e) //text or use dropdown box for Genre
+        {
             {
-                Genre = "TEXT BOX is EMPTY";
+
+                string item = Combo.SelectedItem.ToString();
+                Trace.WriteLine("==== " + item);
             }
-
-           
         }
 
-        private void TextBox_TextChanged_4(object sender, TextChangedEventArgs e)
+
+
+        private void TextBox_TextChanged_4(object sender, TextChangedEventArgs e) //textbox for Director
         {
-            string Director = Console.ReadLine();
+
 
         }
-         
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+
+        private void Button_Click_1(object sender, RoutedEventArgs e) //Next Button
         {
-           
-            var win2= new Win3();
+
+            var win2 = new Win3();
             win2.Show();
-            this.Close(); 
-            
+            this.Close();
+
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e) //Previous Button
         {
-            var win2 =  new Window1();
-            win2. Show();
+            var win2 = new Window1();
+            win2.Show();
             this.Close();
         }
 
-       
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+
+        private void Try_Again_Click(object sender, RoutedEventArgs e)
         {
-         // Label. = TextBox_TextChanged_1._Text;
-          //Label. = TextBox_TextChanged_2._Text;
-          //Label. = TextBox_TextChanged_3._Text;
-          //Label. = TextBox_TextChanged_4._Text;
+
+            Author.Clear();
+            Year.Clear();
+            Director.Clear();
 
         }
+
+
+
+        private void Get_List_Click(object sender, RoutedEventArgs e)
+        {
+            string author = Author.Text.Trim();
+            string year = Year.Text.Trim();
+            string Genre = Director.Text.Trim();
+        }
+
+
+        
     }
 }
+
+
+
 
 

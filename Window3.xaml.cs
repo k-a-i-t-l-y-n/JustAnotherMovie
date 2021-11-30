@@ -19,13 +19,7 @@ namespace PracticeProject
     /// </summary>
     public partial class Win3 : Window
     {
-        private object printTextBox_TextChanged_1;
-        private object printPreviewDialog1;
-        private string sResult;
-        private object richTextBox1;
-    //    private object myString;
-        private object value;
-
+     
         public Win3()
         {
             InitializeComponent();
@@ -37,24 +31,19 @@ namespace PracticeProject
         public object TextBox1 { get; private set; }
         public Action<object, TextChangedEventArgs> SetValueForText1 { get; private set; }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e) //previous button
         {
             var win3 = new Win2();
             win3.Show();
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e) //exit button
         {
             this.Close();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            var win3 = new Window4();
-            win3.Show();
-            this.Close();
-        }
+     
 
       
 
